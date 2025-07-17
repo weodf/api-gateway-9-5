@@ -88,13 +88,5 @@ public class CircuitBreakerFilter implements Filter {
         }
     }
 
-    @Data
-    public static class CircuitBreakerConfig {
-        private int failureThresholdPercentage = 50;
-        private int minRequestThreshold = 20;
-        private long timeoutMs = 60000;
-        private int halfOpenMaxRequests = 5;
-        private int halfOpenSuccessThreshold = 3;
-        private String fallbackResponse;
-    }
+
 }
